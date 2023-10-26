@@ -27,7 +27,7 @@ const theme = extendTheme({
 export default function App({ Component, pageProps }) {
   return (
     <QueryClientProvider client={queryClient}>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider>
         <Component {...pageProps} />
       </ChakraProvider>
     </QueryClientProvider>
